@@ -1,0 +1,34 @@
+Flight Booking Policies
+
+Baggage Policy:
+Passengers are generally allowed one cabin bag and one personal item.
+Checked baggage allowance depends on the airline and fare type.
+Passengers should verify the baggage allowance before booking.
+
+Cancellation Policy:
+Cancellation rules depend on the airline and fare type.
+Some fares may allow cancellation with a fee.
+Some non-refundable fares may not provide a refund.
+The assistant should not promise a refund unless the applicable policy confirms it.
+
+Refund Policy:
+Eligible refunds are generally processed according to the airline's fare rules.
+Refund processing time may vary depending on the payment method and airline.
+Refund eligibility should be checked before confirming cancellation.
+
+Check-in:
+Passengers should complete online check-in when available.
+Check-in opening and closing times may vary by airline and airport.
+Passengers should arrive at the airport sufficiently early for security and boarding procedures.
+
+Booking:
+A flight should only be considered available when the flight search tool reports available seats.
+The assistant must never invent flight availability, prices, flight numbers, or booking confirmation details.
+
+Flight Changes:
+Changes to a booking may be subject to airline rules and additional charges.
+The assistant should ask for the booking information before discussing a specific booking change.
+
+General Rule:
+Flight availability, price, seats, flight numbers, and schedules must come from the flight database through the flight search tool.
+General travel policies and informational questions can be answered using the knowledge base.
