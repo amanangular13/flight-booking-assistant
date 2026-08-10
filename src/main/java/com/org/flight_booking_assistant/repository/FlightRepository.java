@@ -9,4 +9,5 @@ public interface FlightRepository extends JpaRepository<Flight, Long> {
 
     List<Flight> findBySourceIgnoreCaseAndDestinationIgnoreCase(String source, String destination);
 
+    Flight findByFlightNumber(String flightNumber);
 }

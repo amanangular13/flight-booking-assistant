@@ -1,17 +1,14 @@
 package com.org.flight_booking_assistant.service;
 
 import com.org.flight_booking_assistant.dto.ChatRequest;
-import com.org.flight_booking_assistant.entity.Flight;
 import com.org.flight_booking_assistant.repository.FlightRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 @RequiredArgsConstructor
-public class flightAssistantService {
+public class FlightAssistantService {
 
     private final ChatClient chatClient;
     private final FlightRepository flightRepository;
