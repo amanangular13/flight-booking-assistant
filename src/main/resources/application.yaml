@@ -2,6 +2,21 @@ spring:
   application:
     name: flight-booking-assistant
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/flight_booking_db
+    username: root
+    password: 12345678
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+
   ai:
     openai:
       api-key: ${OPENAI_API_KEY}

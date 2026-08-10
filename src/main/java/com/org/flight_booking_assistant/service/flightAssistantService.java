@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class FlightAssistanceService {
+public class flightAssistantService {
 
     private final ChatClient chatClient;
     private final FlightRepository flightRepository;
@@ -22,8 +22,4 @@ public class FlightAssistanceService {
                 .call()
                 .content();
     }
-
-    public List<Flight> searchFlights(String source, String destination) {
-        return flightRepository
-                .findBySourceIgnoreCaseAndDestinationIgnoreCase(source, destination);
 }
