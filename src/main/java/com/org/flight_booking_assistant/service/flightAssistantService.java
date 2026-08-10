@@ -1,5 +1,6 @@
 package com.org.flight_booking_assistant.service;
 
+import com.org.flight_booking_assistant.dto.ChatRequest;
 import com.org.flight_booking_assistant.entity.Flight;
 import com.org.flight_booking_assistant.repository.FlightRepository;
 import lombok.RequiredArgsConstructor;
@@ -15,10 +16,12 @@ public class flightAssistantService {
     private final ChatClient chatClient;
     private final FlightRepository flightRepository;
 
-    public String chat(String message) {
+    public String chat(ChatRequest chatRequest) {
         return chatClient
                 .prompt()
-                .user(message)
+                .user(chatRequest.message())
+                .advisors(advisorSpec -> advisorSpec
+                        .param("chat_memory_conversation_id", chatRequest.sessionId()))
                 .call()
                 .content();
     }

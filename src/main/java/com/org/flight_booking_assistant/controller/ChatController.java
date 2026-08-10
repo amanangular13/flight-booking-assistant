@@ -18,7 +18,7 @@ public class ChatController {
 
     @PostMapping
     public ChatResponse chat(@RequestBody ChatRequest chatRequest) {
-        String response = flightAssistantService.chat(chatRequest.message());
+        String response = flightAssistantService.chat(chatRequest);
         return new ChatResponse(response);
     }
 }
